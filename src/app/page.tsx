@@ -27,10 +27,10 @@ export default function Home() {
       setInit(true);
     });
   }, []);
-
-  const particlesLoaded = (container) => {
+  const particlesLoaded = (container: HTMLElement | null) => {
     console.log(container);
   };
+  
 
   const options = useMemo(
     () => ({
